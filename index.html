@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pokédex</h1>
+        <div class="pokemon-grid" id="pokemonGrid">
+            <div class="loading">Cargando Pokémon...</div>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar las estadísticas -->
+    <div class="modal" id="pokemonModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="" class="modal-image">
+                <h2 id="modalName"></h2>
+                <div class="modal-types" id="modalTypes"></div>
+                <div class="stats-container">
+                    <div class="stat">
+                        <span class="stat-name">Vida</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill" id="hpBar"></div>
+                        </div>
+                        <span class="stat-value" id="hpValue"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-name">Ataque</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill" id="attackBar"></div>
+                        </div>
+                        <span class="stat-value" id="attackValue"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-name">Defensa</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill" id="defenseBar"></div>
+                        </div>
+                        <span class="stat-value" id="defenseValue"></span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-name">Velocidad</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill" id="speedBar"></div>
+                        </div>
+                        <span class="stat-value" id="speedValue"></span>
+                    </div>
+                </div>
+                <p id="modalDescription" class="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
